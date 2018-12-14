@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/major-responsive.css">
+    <link rel="stylesheet" href="css/minor-responsive.css">
+    <title>My Portfolio - About Me</title>
+  </head>
+  <body>
+
+  <section class="header-main">
+    <img src="img/logo.png" alt="logo" id="logo">
+    <header>
+      <h1>Caroline Rozali</h1>
+      <h3>Front-end Web Development</h3>
+      <p><em>"It's all about creating the best user interface...
+        without the complicated part."</em></p>
+    </header>
+    <div class="nav-btn">
+      <button type="button" onclick="myFunction()" >&#9776;</button>
+    </div>
+  </section>
+
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="myportfolio-aboutme.html">About Me</a></li>
+      <li><a href="myportfolio-galleryandworks.html">Gallery and Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+<picture>
+  <source media="(min-width: 480px)" srcset="img/frontend-wallpaper.png">
+    <img src="img/frontend-wallpaper-small.png" alt="frontend wallpaper">
+</picture>
+
+  <article>
+    <header class="title">
+      <h2>About Me</h2>
+    </header>
+    <p>Passionate learner with an unyielding attitude of enthusiasm.
+    Has worked in Graphic Designs and Web Development field.</p>
+    <ul>
+      <li>Has
+    basic knowledge of HTML 5, CSS 3 and Python.</li>
+      <li>Has basic knowledge of Form Studies, Color Theory and using references.</li>
+    </ul>
+  </article>
+
+  <footer>
+    <P>
+      By Caroline Rozali. Published by <time datetime='2018-10-10'>2018</time>.
+      &copy;
+    <a href="https://creativecommons.org/licenses/by/4.0/">Copywright Policy
+    </a>
+  </p>
+  </footer>
+
+  <script>
+  function myFunction() {
+     var element = document.getElementById("nav-bar");
+     element.classList.toggle("open");
+  }
+  </script>
+  </body>
+</html>

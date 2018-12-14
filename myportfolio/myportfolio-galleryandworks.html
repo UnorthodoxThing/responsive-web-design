@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="major-responsive.css">
+    <link rel="stylesheet" href="minor-responsive.css">
+    <title>My Portfolio - Gallery and Works</title>
+
+    <style>
+    .open {
+      position: relative;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    </style>
+  </head>
+  <body>
+
+  <section class="header-main">
+    <img src="img/logo.png" alt="logo" id="logo">
+    <header>
+      <h1>Caroline Rozali</h1>
+      <h3>Front-end Web Development</h3>
+      <p><em>"It's all about creating the best user interface...
+        without the complicated part."</em></p>
+    </header>
+    <div class="nav-btn">
+      <button type="button" onclick="myFunction()" >&#9776;</button>
+    </div>
+  </section>
+
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="myportfolio-aboutme.html">About Me</a></li>
+      <li><a href="myportfolio-galleryandworks.html">Gallery and Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+<article>
+
+  <header class="title">
+    <h1>Gallery and Works</h1>
+  </header>
+
+<div class="content">
+  <section class="first-box">
+    <header>
+      <h2>Art Works</h2>
+      <p>#digital #traditional</p>
+    </header>
+
+    <picture>
+      <source media="(min-width: 480px)"  srcset="img/gallery-small.png">
+        <img src="img/gallery.png" alt="art works">
+    </picture>
+
+    <div class="link">
+      <a href="https://www.deviantart.com/optimismeboo/gallery/">Find at DeviantArt</a>
+    </div>
+  </section>
+
+  <section class="second-box">
+    <header>
+      <h2>Tournament project</h2>
+      <p>#python</p>
+    </header>
+
+<img src="img/tournamentproject.png" alt="tournament project">
+<div class="link">
+  <a href="https://github.com/UnorthodoxThing/Tournament-project">Find at Github</a>
+</div>
+  </section>
+
+  <section class="third-box">
+    <header>
+      <h2>Epik High fanbase page</h2>
+      <p>#html #css</p>
+    </header>
+    <img src="img/samplepage.png" alt="sample of html file">
+    <div class="link">
+      <a href="https://github.com/UnorthodoxThing/epikhigh-fanbase-page">Find at Github</a>
+    </div>
+  </section>
+  </div>
+</article>
+
+  <footer>
+    <P>
+      By Caroline Rozali. Published by <time datetime='2018-10-10'>2018</time>.
+      &copy;
+    <a href="https://creativecommons.org/licenses/by/4.0/">Copywright Policy
+    </a>
+  </p>
+  </footer>
+
+  <script>
+  function myFunction() {
+     var element = document.getElementById("nav-bar");
+     element.classList.toggle("open");
+  }
+  </script>
+  </body>
+</html>
